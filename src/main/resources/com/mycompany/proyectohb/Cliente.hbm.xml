@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-ene-2015 17:09:34 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="proyectohb" name="com.mycompany.bean.Cliente" optimistic-lock="version" table="cliente">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nombre" type="string">
+      <column length="50" name="nombre">
+        <comment>Nombre</comment>
+      </column>
+    </property>
+    <property name="ape1" type="string">
+      <column length="50" name="ape1">
+        <comment>Primer Apellido</comment>
+      </column>
+    </property>
+    <property name="ape2" type="string">
+      <column length="50" name="ape2">
+        <comment>Segundo Apellido</comment>
+      </column>
+    </property>
+    <property name="email" type="string">
+      <column length="50" name="email">
+        <comment>Correo Electronico</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>
